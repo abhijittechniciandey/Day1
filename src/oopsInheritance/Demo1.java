@@ -74,7 +74,17 @@ class Bike1 extends Vehicle1{
 
 	public String getHandle() {
 		return handle;
-	}	
+	}
+
+
+	@Override
+	public String toString() {
+		return "Bike1 [getHandle()=" + getHandle() + ", getEngine()=" + getEngine() + ", getWheels()=" + getWheels()
+				+ ", getSeats()=" + getSeats() + ", getFueltank()=" + getFueltank() + ", getLights()=" + getLights()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+	
 	
 }
 
@@ -94,8 +104,7 @@ public class Demo1 {
 //		System.out.println(bike.getHandle());
 //		System.out.println(bike.getEngine());
 		Bike1 bike1=new Bike1("long","Diesel",4,4,40,"LED");
-		System.out.println(bike1.getSeats());
-		System.out.println(bike1.getFueltank());
+		System.out.println(bike1);
 
 	}
 
