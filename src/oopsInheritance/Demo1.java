@@ -64,10 +64,13 @@ class Bike1 extends Vehicle1{
 		this.handle="short";
 	}
 
-	public Bike1(String handle) {
-		super();
-		this.handle = handle;
+	
+	public Bike1(String handle,String engine, int wheels, int seats, int fueltank, String lights) {
+		super(engine, wheels, seats, fueltank, lights);
+		// TODO Auto-generated constructor stub
+		this.handle=handle;
 	}
+
 
 	public String getHandle() {
 		return handle;
@@ -87,9 +90,12 @@ public class Demo1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Bike1 bike=new Bike1();
-		System.out.println(bike.getHandle());
-		System.out.println(bike.getEngine());
+//		Bike1 bike=new Bike1();
+//		System.out.println(bike.getHandle());
+//		System.out.println(bike.getEngine());
+		Bike1 bike1=new Bike1("long","Diesel",4,4,40,"LED");
+		System.out.println(bike1.getSeats());
+		System.out.println(bike1.getFueltank());
 
 	}
 
